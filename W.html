@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>www.ramzan.com</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #content {
+      margin-top: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Welcome Ramzan</h1>
+
+  <button onclick="showHome()">Home</button>
+  <button onclick="showAbout()">About</button>
+  <button onclick="showContact()">Contact</button>
+
+  <div id="content">
+    Click any button to see information
+  </div>
+
+  <script>
+    function showHome() {
+      document.getElementById("content").innerHTML =
+        "<b>Home Address:</b><br>House No 12, Street 5,<br>Pakistan";
+    }
+
+    function showAbout() {
+      document.getElementById("content").innerHTML =
+        "<b>About Me:</b><br>My name is Ramzan. I am learning web development from zero.";
+    }
+
+    function showContact() {
+      document.getElementById("content").innerHTML =
+        "<b>Contact Me:</b><br>Phone: 0307-4086201<br>Email: mr669292@gmail.com";
+    }
+  </script>
+
+</body>
+</html>
